@@ -1,0 +1,368 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+
+/* SHIFT */
+
+nav.shift ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+nav.shift ul li a:hover {
+    color: #FFF;
+}
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '';
+    color: #white;
+    background: #000000;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* Keyframes */
+
+@-webkit-keyframes fill {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #333;
+    }
+}
+
+
+/* Keyframes */
+
+@-webkit-keyframes circle {
+    0% {
+        width: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        z-index: -1;
+        background: #eee;
+        border-radius: 100%;
+    }
+    100% {
+        background: #aaa;
+        height: 5000%;
+        width: 5000%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+    }
+}
+
+
+/* FIN NAVIGATION */
+
+
+/* LOGO */
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    padding-top: 80px;
+}
+
+.logo h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: -24px !important;
+    font-weight: 300;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+/* FIN LOGO */
+
+
+/* FILTROS */
+
+
+/* FIN FILTROS */
+
+.filtros ul {
+    width: 100%;
+    text-align: center;
+}
+
+.filtros ul li a {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+filtros ul li a:before {
+    transition: all .5s;
+}
+
+.filtros li {
+    width: 100%;
+    text-align: center;
+    display: inline;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 6px;
+    border-style: solid;
+    line-height: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-weight: 300;
+}
+
+.filtros li:hover {
+    background-color: #333;
+}
+
+.filtros a:hover {
+    color: #FFF;
+}
+
+#porfolio h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #333;
+}
+
+.seleccion-images {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seleccion-images img {
+    width: 450px;
+    height: 320px;
+    text-align: center;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px 'Quicksand', sans-serif;
+}
+
+#contact {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#contact h3 {
+    color: #21201E;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+ ::-webkit-input-placeholder {
+    color: #888;
+}
+
+ :-moz-placeholder {
+    color: #888;
+}
+
+ ::-moz-placeholder {
+    color: #888;
+}
+
+ :-ms-input-placeholder {
+    color: #888;
+}
+
+
+/* FIN CONTACTO */
+
+
+/* FOOTER */
+
+footer img {
+    width: 80px;
+}
+
+footer {
+    background: linear-gradient(to bottom, #21201E, #53514E);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* FIN FOOTER */
